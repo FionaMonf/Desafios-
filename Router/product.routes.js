@@ -4,8 +4,6 @@ import ProductManager from "../controllers/ProductManager.js";
 const ProductRouter = Router();
 const product = new ProductManager();
 
-
-
 ProductRouter.get("/", async (req, res) => {
   res.send(await product.getProducts());
 });
